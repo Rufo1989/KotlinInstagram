@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.MainActivity">
+
+    <EditText
+        android:id="@+id/emailText"
+        android:layout_width="280dp"
+        android:layout_height="53dp"
+        android:layout_marginTop="45dp"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="Enter Email"
+        android:textColor="#0D2CD6"
+        android:inputType="text"
+        android:textSize="22sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/passwordText"
+        android:layout_width="281dp"
+        android:layout_height="64dp"
+        android:layout_marginTop="25dp"
+        android:ems="10"
+        android:gravity="center"
+        android:textColor="#0BD313"
+        android:hint="Enter Password"
+        android:inputType="text"
+        android:textSize="22sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/emailText" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="110dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="30dp"
+        android:onClick="signInClicked"
+        android:textStyle="bold"
+        android:textColor="#DFCA0E"
+        android:textSize="18sp"
+        android:text="Sign In"
+        app:layout_constraintStart_toStartOf="@+id/passwordText"
+        app:layout_constraintTop_toBottomOf="@+id/passwordText" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="110dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="30dp"
+        android:onClick="signUpClicked"
+        android:textStyle="bold"
+        android:textColor="#0BC812"
+        android:textSize="18sp"
+        android:text="Sign Up"
+        app:layout_constraintEnd_toEndOf="@+id/passwordText"
+        app:layout_constraintTop_toBottomOf="@+id/passwordText" />
+</androidx.constraintlayout.widget.ConstraintLayout>
